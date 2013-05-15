@@ -1,0 +1,61 @@
+define({
+	root: {
+		firstName: "First name",
+		lastName: "Last name",
+		emailAddress: "Email address",
+		roles: "Roles",
+		users: "Users",
+		createNew: "New",
+		export: "Export",
+		clients: "Clients",
+		showingUser: "Showing User",
+		edit: "Edit",
+		newUser: "New user",
+		editUser: "Edit user",
+		userDetails: "User details",
+		role: "Role",
+		permissions: "Permissions",
+		admin: "Admin",
+		investigator: "Investigator",
+		screener: "Screener",
+		groups: "Groups",
+		groupsSelected: "Groups selected",
+		cancel: "Cancel",
+		createUser: "Create user",
+		editUserDetails: "Edit user details",
+		editUserMemberships: "Edit user memberships",
+		save: "Save",
+		userEdited: "User details edited successfully",
+		userCreated: "User created successfully",
+		errorEditing: "Error while editing user details",
+		errorCreating: "Error in User Creation",
+		error: "error",
+		success: "success",
+		placeFirstName: "Enter First Name",
+		placeLastName: "Enter Last Name",
+		placeEmailAddress: "Enter Email Address",
+		missingFirstNewUser: "Please enter a valid First Name",
+		invalidNewUser: "Please enter Alphabetic Characters only (A-Z, a-z)",
+		missingLastNewUser: "Please enter a valid Last Name",
+		missingEmailAddress: "Please enter a valid E-mail address",
+		invalidEmailAddress: "Invalid Email address format",
+		roleHead: "ROLE",
+		newColumnError: "New columns should be in an array",
+		assigned: "Assigned Roles",
+		unassigned: "Unassigned Roles",
+		addAll: "Add All",
+		unassignedRoles: "Unassigned Roles",
+		assignedRoles: "Assigned Roles",
+		removeAll: "Remove All",
+		onePassUserName: "OnePass User Name",
+		placeOnePassUserName: "Enter OnePass User Name",
+		invalidOnePassUserName:"Please enter minimum 8 characters"
+	}
+	// For each language defined for this bundle,
+	// set the language name's value to `true`. You'll
+	// also need to create a language bundle with the
+	// same name as this file in a directory named after
+	// the language. A Spanish (es) bundle has been provided
+	// as an example.
+
+});

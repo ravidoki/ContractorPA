@@ -1,0 +1,45 @@
+<div class="userContainer dijit">
+	<div data-dojo-type="dijit/layout/BorderContainer"
+		 data-dojo-props="region: 'center', splitter: false, gutters: false"
+		 data-dojo-attach-point="_borderContainer">
+		
+		<div class="component component-margin" data-dojo-type="dijit/layout/ContentPane"
+			 data-dojo-props="region:'top'">
+				<div class="component-margin-content">
+					<span class="exportButton" data-dojo-type="dijit/form/Button" data-dojo-attach-point="dapExportButton">${l10n.export}</span>
+					<h1>${l10n.users}</h1>
+				</div>
+		</div>
+
+		<div class="userTreeContainer component" data-dojo-type="dijit/layout/ContentPane"
+			 data-dojo-props="region:'leading'">
+			<header class="component-header">
+				<h1>${l10n.users}</h1>
+				<a class="editLink" data-dojo-attach-point="dapNewUserAnchor"
+				   href="javascript:;">${l10n.createNew}</a>
+			</header>
+			<div class="component-margin-content">
+				<label>${l10n.showingUser} :<label data-dojo-attach-point="dapShowUserName"></label>
+				</label>
+			</div>
+			<div data-dojo-attach-point="dapUsersList" class="component-margin-content"></div>
+		</div>
+
+		<div class="userTabContainer component" data-dojo-type="dijit/layout/ContentPane" data-dojo-props="region:'center'">
+			<div data-dojo-type="dijit/layout/TabContainer" data-dojo-attach-point="dapTabUserContainer">
+				<div data-dojo-type="dijit/layout/ContentPane"
+					title="${l10n.userDetails}" data-dojo-attach-point="dapTabDefCont">
+					<div data-dojo-attach-point="dapDisplayUserDetails"></div>
+				</div>
+				<div data-dojo-type="dijit/layout/ContentPane" title="${l10n.groups}">
+					<header class="component-header">
+						<a class="editLink hidden" data-dojo-attach-point="dapUserGroupsEditAnchor"
+						   href="javascript:;">${l10n.edit}</a>
+					</header>
+					<div class="component-margin-content" data-dojo-attach-point="dapUserGroupsTree"></div>
+				</div>
+			</div>
+		</div>
+
+	</div>
+</div>
