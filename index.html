@@ -1,17 +1,30 @@
-<!DOCTYPE html>
+<!doctype html>
 <html>
-<head>
-	<meta charset="utf-8">
-	<meta http-equiv="X-UA-Compatible" content="chrome=1">
-	<title>Contractor PA</title>
-	<!--link href="src/dojox/mobile/themes/iphone/iphone.css" rel="stylesheet"></link-->
-</head>
-<body class="claro">
-    <script src="src/cpa/config.js"></script>
-    <!--script src="src/dojo/dojo.js"></script-->
-	<script src="src/dojo/dojo.js"></script>
-	<script src="src/cpa/app.js"></script>
-	<div id="appContainer">
-	</div>
-</body>
+    <head>
+        <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,minimum-scale=1,user-scalable=no">
+        <meta name="apple-mobie-web-app-capable" content="yes">
+        <title>Contractor PA</title>
+        <link href="src/dojox/mobile/themes/iphone/iphone.css" rel="stylesheet"/>
+        <script src="src/cpa/cordova.js"></script>
+        <script src="src/cpa/config.js"></script>
+		<script src="src/dojo/dojo.js"></script>
+		<script src="src/cpa/app.js"></script>
+	</head>
+    <body onLoad="onBodyLoad()">
+        <div dojoType="dojox.mobile.ScrollableView" selected="true">
+            <h1 dojoType="dojox.mobile.Heading" fixed="top">Hello, World!</h1>
+            <h2 dojoType="dojox.mobile.RoundRectCategory">First Section</h2>
+            <div dojoType="dojox.mobile.RoundRect">
+                This is a nice standard rounded rectangular label.
+            </div>
+            <h2 dojoType="dojox.mobile.RoundRectCategory">Second Section</h2>
+            <ul dojoType="dojox.mobile.RoundRectList">
+                <li dojoType="dojox.mobile.ListItem">List Item 1</li>
+                <li dojoType="dojox.mobile.ListItem">List Item 2</li>
+                <li dojoType="dojox.mobile.ListItem">List Item 3</li>
+                <li dojoType="dojox.mobile.ListItem">List Item 4</li>
+                <li dojoType="dojox.mobile.ListItem">List Item 5</li>
+            </ul>
+        </div>
+    </body>
 </html>

@@ -36,7 +36,7 @@ define([
 	 * @module
 	 * @description This widget displays the details of user
 	 */
-	return declare("fsp.admin.view.UserDetails", [_WidgetBase, _TemplatedMixin, _WidgetsInTemplateMixin,
+	return declare("cpa.home.HomeView", [_WidgetBase, _TemplatedMixin, _WidgetsInTemplateMixin,
 		Destroyable], {
 
 		/**
